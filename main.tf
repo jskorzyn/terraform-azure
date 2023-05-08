@@ -74,7 +74,7 @@ resource "azurerm_linux_virtual_machine" "main" {
     caching              = "ReadWrite"
   }
 
- os_profile_linux_config {
+  os_profile_linux_config {
     disable_password_authentication = false
   }
 }
