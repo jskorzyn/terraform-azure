@@ -73,4 +73,8 @@ resource "azurerm_linux_virtual_machine" "main" {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"
   }
+
+ os_profile_linux_config {
+    disable_password_authentication = false
+  }
 }
