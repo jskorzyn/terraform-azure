@@ -9,3 +9,4 @@
       cloud.terraform.terraform:
         project_path: "{{ playbook_dir }}"
         state: present
+        force_init: true
