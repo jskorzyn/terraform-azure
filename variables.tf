@@ -1,7 +1,7 @@
 variable "prefix" {
-  description = "jsk"
+  default = "jsk"
 }
 
 variable "location" {
-  description = "westeurope"
+  default = "westeurope"
 }
