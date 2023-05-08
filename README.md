@@ -1,2 +1,3 @@
 # terraform-azure
-Automationg Azure with Terraform 
+
+Automationg Azure with Terraform
