@@ -64,9 +64,9 @@ resource "azurerm_linux_virtual_machine" "main" {
 #   }
 
   source_image_reference {
-    publisher = "Ubuntu"
-    offer     = "UbuntuServer"
-    sku       = "16.04-LTS"
+    publisher = "RedHat"
+    offer     = "RHEL"
+    sku       = "8-LVM"
     version   = "latest"
   }
 
