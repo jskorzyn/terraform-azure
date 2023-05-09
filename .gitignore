@@ -1,3 +1,4 @@
 lab_examples/
 **/.terraform
 *.lock.hcl
+ansible-navigator.log
