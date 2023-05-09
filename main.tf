@@ -53,6 +53,7 @@ resource "azurerm_linux_virtual_machine" "main" {
   size                            = "Standard_A2_v2"
   admin_username                  = "ansible"
   admin_password                  = "Ansible123"
+  disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.main.id,
   ]
@@ -72,9 +73,5 @@ resource "azurerm_linux_virtual_machine" "main" {
   os_disk {
     storage_account_type = "Standard_LRS"
     caching              = "ReadWrite"
-  }
-
-  os_profile_linux_config {
-    disable_password_authentication = false
   }
 }
